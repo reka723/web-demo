@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 export default function HomePage() {
   return (
     <section className="mb-20 max-w-6xl mx-auto px-4 mt-8">
@@ -11,18 +13,18 @@ export default function HomePage() {
           innovate, and succeed in a digital-first world.
         </p>
         <div className="flex justify-center gap-4">
-          <a
-            href="/products"
+          <Link
+            to="/products"
             className="bg-primary text-primary-foreground px-6 py-2 rounded-md hover:bg-primary/90 transition"
           >
             View Products
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="border border-primary text-primary px-6 py-2 rounded-md hover:bg-muted transition"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
 
